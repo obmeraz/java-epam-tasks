@@ -3,6 +3,12 @@ package com.company;
 import java.util.Scanner;
 
 public class Main {
+    public static final int ONE_MILLION = 1000000;
+    public static final int HUNDRED_THOUSAND = 100000;
+    public static final int TEN_THOUSAND = 10000;
+    public static final int ONE_THOUSAND = 1000;
+    public static final int ONE_HUNDRED = 100;
+    public static final int TEN = 10;
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -25,7 +31,8 @@ public class Main {
         int secondNum = (int) num % 10;
         num /= 10;
         int firstNum = (int) num;
-        return seventhNum * 1000000 + sixNum * 100000 + fiveNum * 10000 + fourthNum * 1000 +
-                thirdNum * 100 + secondNum * 10 + firstNum;
+        return seventhNum * ONE_MILLION + sixNum * HUNDRED_THOUSAND + fiveNum * TEN_THOUSAND +
+                fourthNum * ONE_THOUSAND +
+                thirdNum * ONE_HUNDRED + secondNum * TEN + firstNum;
     }
 }
