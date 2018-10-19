@@ -5,12 +5,15 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double number = scanner.nextDouble();
-        boolean result = isSequence(number);
-        System.out.println(result);
+        double number = UserInput.inputValue();
+        boolean result = SequenceLogic.isSequence(number);
+        Output.print(result);
     }
 
+
+}
+
+class SequenceLogic {
     public static boolean isSequence(double number) {
         int fourthNum = (int) number % 10;
         number /= 10;
@@ -20,5 +23,18 @@ public class Main {
         number /= 10;
         int firstNum = (int) number % 10;
         return firstNum < secondNum && secondNum < thirdNum && thirdNum < fourthNum;
+    }
+}
+
+class UserInput {
+    public static double inputValue() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
+    }
+}
+
+class Output {
+    public static void print(boolean value) {
+        System.out.println(value);
     }
 }

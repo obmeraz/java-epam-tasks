@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double number = scanner.nextDouble();
+        double number = UserInput.inputValue();
         double resultArithmetic = AverageCalc.toAverageArithmetic(number);
-        System.out.println(resultArithmetic);
         double resultGeometric = AverageCalc.toAverageGeometric(number);
-        System.out.println(resultGeometric);
+        Output.print(resultArithmetic);
+        Output.print(resultGeometric);
     }
 }
 
@@ -43,5 +42,18 @@ class AverageCalc {
         num /= 10;
         int firstNum = (int) num;
         return Math.pow(firstNum * secondNum * thirdNum * fourthNum * fiveNum * sixNum, 1.0 / 6);
+    }
+}
+
+class UserInput {
+    public static double inputValue() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
+    }
+}
+
+class Output {
+    public static void print(double value) {
+        System.out.println(value);
     }
 }

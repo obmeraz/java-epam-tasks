@@ -4,13 +4,12 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double r1 = scanner.nextDouble();
-        double r2 = scanner.nextDouble();
-        double S1 = Square.calcSquare(r1);
-        double S2 = Square.calcSquare(r2);
-        double S3 = Square.calcSquareCircle(S1, S2);
-        System.out.println(S3);
+        double r1 = UserInput.inputValue();
+        double r2 = UserInput.inputValue();
+        double s1 = Square.calcSquare(r1);
+        double s2 = Square.calcSquare(r2);
+        double s3 = Square.calcSquareCircle(s1, s2);
+        Output.print(s3);
     }
 }
 
@@ -24,3 +23,15 @@ class Square {
     }
 }
 
+class UserInput {
+    public static double inputValue() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
+    }
+}
+
+class Output {
+    public static void print(double value) {
+        System.out.println(value);
+    }
+}

@@ -4,14 +4,13 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        double weight = scanner.nextDouble();
+        double weight = UserInput.inputValue();
         double resultInMilligram = ConvertKg.toMilligram(weight);
         double resultInGram = ConvertKg.toGram(weight);
         double resultInTon = ConvertKg.toTon(weight);
-        System.out.println("Milligrams:" + resultInMilligram);
-        System.out.println("Grams:" + resultInGram);
-        System.out.println("Tons:" + resultInTon);
+        Output.print(resultInMilligram, "Milligrams:");
+        Output.print(resultInGram, "Grams:");
+        Output.print(resultInTon, "Tons:");
 
     }
 }
@@ -31,5 +30,18 @@ class ConvertKg {
 
     public static double toTon(double weight) {
         return weight /= IN_TON_VALUE;
+    }
+}
+
+class UserInput {
+    public static double inputValue() {
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextDouble();
+    }
+}
+
+class Output {
+    public static void print(double value, String str) {
+        System.out.println(str + " " + value);
     }
 }
