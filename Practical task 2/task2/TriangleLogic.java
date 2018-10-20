@@ -14,8 +14,9 @@ public class TriangleLogic {
         }
     }
 
-    public static double calculateSide(Point t, Point f) {
-        return Math.sqrt(Math.pow((t.getX() - f.getX()), 2) + Math.pow((t.getY() - f.getY()), 2));
+    public static double calculateSide(Point firstPoint, Point secondPoint) {
+        return Math.sqrt(Math.pow((firstPoint.getX() - secondPoint.getX()), 2)
+                + Math.pow((firstPoint.getY() - secondPoint.getY()), 2));
     }
 
     public static void isRectTriangle(Point a, Point b, Point c) {
