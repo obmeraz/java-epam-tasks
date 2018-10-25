@@ -1,7 +1,10 @@
-package by.epam.pretraining.zarembo.task31;
+package by.epam.javatraining.zarembo.controller;
 
-public class Main {
 
+import by.epam.javatraining.zarembo.model.logic.HeadsOrTails;
+import by.epam.javatraining.zarembo.view.Output;
+
+public class Task31 {
     public static void main(String[] args) {
         int tail = HeadsOrTails.countTailsSides();
         int head = HeadsOrTails.countHeadsSides(tail);

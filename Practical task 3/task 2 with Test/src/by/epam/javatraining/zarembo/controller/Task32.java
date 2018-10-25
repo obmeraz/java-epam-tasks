@@ -1,17 +1,19 @@
-package by.epam.pretraining.zarembo.task32;
+package by.epam.javatraining.zarembo.controller;
 
+import by.epam.javatraining.zarembo.model.logic.NaturalNumber;
+import by.epam.javatraining.zarembo.view.Output;
+import by.epam.javatraining.zarembo.view.UserInput;
 
-public class Main {
-
+public class Task32 {
     public static void main(String[] args) {
         int numberOne = UserInput.inputValue();
         int numberTwo = UserInput.inputValue();
 
-        NaturalNumber.findNaturalDividers(numberOne);
         Output.print(NaturalNumber.findLargestDigit(numberOne));
         Output.printBoolean(NaturalNumber.isPalindrome(numberTwo));
         Output.print(NaturalNumber.findNOK(numberOne, numberTwo));
         Output.print(NaturalNumber.findNOD(numberOne, numberTwo));
-        Output.printBoolean(NaturalNumber.isNaturalNumber(numberOne));
+        Output.printBoolean(NaturalNumber.isPrimeNumber(numberOne));
     }
 }
+

@@ -1,4 +1,4 @@
-package by.epam.pretraining.zarembo.task31;
+package by.epam.javatraining.zarembo.view;
 
 public class Output {
     public static void printResults(String str, int value) {

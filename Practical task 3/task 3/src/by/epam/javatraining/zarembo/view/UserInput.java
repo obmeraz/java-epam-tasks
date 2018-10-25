@@ -1,4 +1,4 @@
-package by.epam.pretraining.zarembo.task32;
+package by.epam.javatraining.zarembo.view;
 
 import java.util.Scanner;
 

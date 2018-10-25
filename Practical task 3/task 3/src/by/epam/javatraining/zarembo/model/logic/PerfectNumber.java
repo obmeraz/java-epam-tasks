@@ -1,4 +1,4 @@
-package by.epam.pretraining.zarembo.task33;
+package by.epam.javatraining.zarembo.model.logic;
 
 public class PerfectNumber {
     public static boolean isPerfectNumber(int number) {

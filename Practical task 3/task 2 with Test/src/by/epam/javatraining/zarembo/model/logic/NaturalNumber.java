@@ -1,4 +1,4 @@
-package by.epam.pretraining.zarembo.task32;
+package by.epam.javatraining.zarembo.model.logic;
 
 public class NaturalNumber {
     public static int findLargestDigit(int number) {
@@ -22,7 +22,7 @@ public class NaturalNumber {
         return num == palindrome;
     }
 
-    public static boolean isNaturalNumber(int number) {
+    public static boolean isPrimeNumber(int number) {
         for (int i = 2; i < number; i++) {
             if (number % i == 0) {
                 return false;
@@ -31,25 +31,19 @@ public class NaturalNumber {
         return true;
     }
 
-    public static void findNaturalDividers(int number) {
-        for (int i = 2; i < Math.sqrt(number); i++) {
-            if (number % i == 0 && isNaturalNumber(i)) {
-                System.out.println("Natural divider:" + i);
-            }
-        }
-    }
-
     public static int findNOD(int numOne, int numTwo) {
-        for (int i = 2; i < numOne && i < numTwo; i++) {
-            if (numOne % i == 0 && numTwo % i == 0) {
-                return i;
+        while (numOne != 0 && numTwo != 0) {
+            if (numOne > numTwo) {
+                numOne %= numTwo;
+            } else {
+                numTwo %= numOne;
             }
         }
-        return 1;
+
+        return numOne + numTwo;
     }
 
     public static int findNOK(int numOne, int numTwo) {
         return (numOne * numTwo) / findNOD(numOne, numTwo);
     }
-
 }

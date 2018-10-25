@@ -1,7 +1,8 @@
-package by.epam.pretraining.zarembo.task31;
+package by.epam.javatraining.zarembo.model.logic;
+
+import by.epam.javatraining.zarembo.model.entity.RandomNumber;
 
 public class HeadsOrTails {
-
     public static final int MAX_THROWS = 1000;
 
     public static int countTailsSides() {
@@ -18,3 +19,4 @@ public class HeadsOrTails {
         return MAX_THROWS - tail;
     }
 }
+

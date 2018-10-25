@@ -1,4 +1,4 @@
-package by.epam.pretraining.zarembo.task31;
+package by.epam.javatraining.zarembo.model.entity;
 
 import java.util.Random;
 
@@ -9,3 +9,4 @@ public class RandomNumber {
         return random.nextInt(2);
     }
 }
+
