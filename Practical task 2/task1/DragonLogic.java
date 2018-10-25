@@ -9,15 +9,17 @@ public class DragonLogic {
     public static final int EYES_NUMBER = 2;
 
     public static int calculateHeads(int age) {
+        int heads;
         if (age < TWO_HUNDRED_YEARS) {
-            return age * 3 + START_HEADS;
+            heads = age * 3 + START_HEADS;
         } else if (age > TWO_HUNDRED_YEARS && age < THREE_HUNDRED_YEARS) {
             age -= TWO_HUNDRED_YEARS;
-            return age * 2 + 600 + START_HEADS;
+            heads = age * 2 + 600 + START_HEADS;
         } else {
             age -= THREE_HUNDRED_YEARS;
-            return age + 600 + 200 + START_HEADS;
+            heads = age + 600 + 200 + START_HEADS;
         }
+        return heads;
     }
 
     public static int calculateEyes(int heads) {
