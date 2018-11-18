@@ -1,7 +1,7 @@
 package by.epam.javatraining.zarembo.tasks.maintask01.model.entity;
 
-import by.epam.javatraining.zarembo.tasks.maintask01.model.Exceptions.VectorIndexOutOfBoundException;
-import by.epam.javatraining.zarembo.tasks.maintask01.model.Exceptions.VectorIsFullException;
+import by.epam.javatraining.zarembo.tasks.maintask01.model.exceptions.VectorIndexOutOfBoundException;
+import by.epam.javatraining.zarembo.tasks.maintask01.model.exceptions.VectorIsFullException;
 
 public class UpgradeVector {
     public static final int DEFAULT_SIZE = 10;

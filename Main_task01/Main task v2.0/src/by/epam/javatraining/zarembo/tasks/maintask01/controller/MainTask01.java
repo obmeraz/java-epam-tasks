@@ -1,6 +1,6 @@
 package by.epam.javatraining.zarembo.tasks.maintask01.controller;
 
-import by.epam.javatraining.zarembo.tasks.maintask01.model.Exceptions.UpgradeVectorException;
+import by.epam.javatraining.zarembo.tasks.maintask01.model.exceptions.UpgradeVectorException;
 import by.epam.javatraining.zarembo.tasks.maintask01.model.entity.UpgradeVector;
 import by.epam.javatraining.zarembo.tasks.maintask01.model.logic.AscSorter;
 import by.epam.javatraining.zarembo.tasks.maintask01.model.logic.AverageFinder;

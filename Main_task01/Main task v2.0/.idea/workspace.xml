@@ -88,7 +88,6 @@
         <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/view/Printable.java" />
         <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/utill/FileOutput.java" />
         <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/utill/PrintType.java" />
-        <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/controller/MainTask01.java" />
         <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/utill/FileVectorCreator.java" />
         <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/utill/LogOutput.java" />
         <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/utill/PrinterCreator.java" />
@@ -99,6 +98,7 @@
         <option value="$PROJECT_DIR$/test/by/epam/javatraining/zarembo/tasks/maintask01/model/logic/ExtremerFinderTest.java" />
         <option value="$PROJECT_DIR$/test/by/epam/javatraining/zarembo/tasks/maintask01/model/logic/LocalPositionFinderTest.java" />
         <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/utill/ConsoleOutput.java" />
+        <option value="$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/controller/MainTask01.java" />
       </list>
     </option>
   </component>
@@ -112,7 +112,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -164,7 +163,7 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="maintask01" type="462c0819:PsiDirectoryNode" />
               <item name="model" type="462c0819:PsiDirectoryNode" />
-              <item name="Exceptions" type="462c0819:PsiDirectoryNode" />
+              <item name="exceptions" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Main task v2.0" type="b2602c69:ProjectViewProjectNode" />
@@ -210,6 +209,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -249,7 +249,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ExtremerFinderTest">
+  <component name="RunManager" selected="Application.MainTask01">
+    <configuration name="MainTask01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.zarembo.tasks.maintask01.controller.MainTask01" />
+      <module name="Main task v2.0" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="by.epam.javatraining.zarembo.tasks.maintask01.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -311,29 +322,6 @@
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="by.epam.javatraining.zarembo.tasks.maintask01.model.logic" />
       <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.zarembo.tasks.maintask01.model.logic.ExtremerFinderTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="OrderCheckerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Main task v2.0" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="by.epam.javatraining.zarembo.tasks.maintask01.model.logic.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="by.epam.javatraining.zarembo.tasks.maintask01.model.logic" />
-      <option name="MAIN_CLASS_NAME" value="by.epam.javatraining.zarembo.tasks.maintask01.model.logic.OrderCheckerTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -407,19 +395,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.OrderCheckerTest" />
       <item itemvalue="JUnit.PositionSearcherTest" />
       <item itemvalue="JUnit.AscSorterTest" />
       <item itemvalue="JUnit.AverageFinderTest" />
       <item itemvalue="JUnit.ExtremerFinderTest" />
+      <item itemvalue="Application.MainTask01" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainTask01" />
         <item itemvalue="JUnit.ExtremerFinderTest" />
         <item itemvalue="JUnit.AverageFinderTest" />
         <item itemvalue="JUnit.AscSorterTest" />
         <item itemvalue="JUnit.PositionSearcherTest" />
-        <item itemvalue="JUnit.OrderCheckerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -437,9 +425,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AscSorterTest - 2018.11.18 at 23h 18m 51s.xml">
-      <configuration name="AscSorterTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AverageFinderTest - 2018.11.18 at 23h 19m 10s.xml">
       <configuration name="AverageFinderTest" configurationId="JUnit" />
     </history-entry>
@@ -467,10 +452,12 @@
     <history-entry file="ExtremerFinderTest - 2018.11.18 at 23h 27m 55s.xml">
       <configuration name="ExtremerFinderTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ExtremerFinderTest - 2018.11.18 at 23h 39m 39s.xml">
+      <configuration name="ExtremerFinderTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="0" />
       <window_info anchor="bottom" id="TODO" order="10" />
@@ -485,8 +472,7 @@
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Designer" order="1" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.2578125" />
-      <window_info anchor="bottom" id="Find" order="5" weight="0.32968536" />
+      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.2578125" />
       <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -499,6 +485,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="3" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" weight="0.32968536" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -603,34 +590,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/utill/File.java" />
     <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/utill/UserInput.java" />
-    <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/view/Output.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="7" column="29" lean-forward="true" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
-          <folding>
-            <element signature="e#318#319#0" expanded="true" />
-            <element signature="e#361#362#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/model/Exceptions/UpgradeVectorException.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/view/Output.java" />
+    <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/model/exceptions/UpgradeVectorException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="37" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/model/Exceptions/VectorIndexOutOfBoundException.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/model/exceptions/VectorIndexOutOfBoundException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="40">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/model/Exceptions/VectorIsFullException.java">
+    <entry file="file://$PROJECT_DIR$/src/by/epam/javatraining/zarembo/tasks/maintask01/model/exceptions/VectorIsFullException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="3" column="36" selection-start-line="3" selection-start-column="36" selection-end-line="3" selection-end-column="36" />

@@ -1,6 +1,6 @@
 package by.epam.javatraining.zarembo.tasks.maintask01.model.logic;
 
-import by.epam.javatraining.zarembo.tasks.maintask01.model.Exceptions.VectorIndexOutOfBoundException;
+import by.epam.javatraining.zarembo.tasks.maintask01.model.exceptions.VectorIndexOutOfBoundException;
 import by.epam.javatraining.zarembo.tasks.maintask01.model.entity.UpgradeVector;
 import org.junit.Test;
 
